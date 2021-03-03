@@ -4,7 +4,6 @@ const $dropzone = document.querySelector(".dropzone");
 const onDrop = (e) => {
   const id = e.dataTransfer.getData("text");
   const $draggable = document.querySelector(`#${id}`);
-  const $dropzone = e.target;
 
   $dropzone.appendChild($draggable);
 
